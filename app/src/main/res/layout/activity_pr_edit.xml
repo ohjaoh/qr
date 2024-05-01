@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pr_edit"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/editProductName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"/>
+    <ImageView
+        android:id="@+id/imageViewProduct2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="해당 view에 대한 설명"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <EditText
+        android:id="@+id/editProductPrice2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Price"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editProductStock2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Stock"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Product Category"/>
+
+    <Button
+        android:id="@+id/buttonUpdateProduct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"/>
+
+</LinearLayout>

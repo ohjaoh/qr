@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Qr"
+        tools:targetApi="31">
+        <activity
+            android:name=".pr_edit"
+            android:exported="false" />
+        <!-- Other activities -->
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database_view"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" /> <!-- VIEW 액션으로 변경 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="database_view"
+                    android:scheme="ohjaohqrapp" />
+                <!-- url ohjaohqrapp://database_view -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pr_add"
+            android:exported="false" />
+        <activity
+            android:name=".ScanQR"
+            android:exported="false" />
+        <activity
+            android:name=".CreateQR"
+            android:exported="false" /> <!-- MainActivity updated to handle custom URL scheme -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Intent filter for handling custom URL scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Adjust the scheme here to match your custom URL(ohjaohqrapp://open?param=value) -->
+                <data android:scheme="ohjaohqrapp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

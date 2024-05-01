@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:id="@+id/con1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상품명" />
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="  상품 카테고리" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="가격" />
+
+            <TextView
+                android:id="@+id/textViewStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="재고" />
+
+            <!-- 이미지를 표시하기 위한 ImageView 추가 -->
+
+            <Button
+                android:id="@+id/buttonListItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정" />
+
+            <Button
+                android:id="@+id/buttonListItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

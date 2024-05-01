@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031845200765",
+    "project_id": "test-33bc4",
+    "storage_bucket": "test-33bc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031845200765:android:a78b57d940afc48dc90214",
+        "android_client_info": {
+          "package_name": "kr.ac.yuhan.cs.qr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO1z8W_USaYxw0M2BbHEeGICzZOQzwmC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
