@@ -53,9 +53,6 @@ public class ScanQR extends AppCompatActivity {
                 processPayment();
             }
         });
-
-
-
     }
 
     // 밑에는 파이어베이스와 연결하여 전역변수로 설정한 2개의 변수 필드명, 데이터를 이용하여 조회하고 값을 가져온다.
